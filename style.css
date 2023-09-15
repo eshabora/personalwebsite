@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: whitesmoke;
+    color: black;
+}
+#header{
+        width: 100%;
+        min-height: 100vh;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #dcdae5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    padding-left: 5%;
+    font-size: 21px;
+    line-height: 1.3;
+}
+.header-text h1{
+    font-size: 90px;
+}
+mark.name{
+    background-color: #dedae9;
+}
+
+ul{
+    font-size: smaller;
+    padding-left: 30px;
+}
+
+.image_container{
+    width: 400px;
+    height: 400px;
+    margin-left: 5px;
+}
+
+.content{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+body {
+    animation: fadeIn 2s ease-in 1;
+}
+
+.twitter-icon img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(80%);
+    transition: filter 0.3s ease;
+    margin-left: 20px;
+}
+
+.twitter-icon:hover img {
+    filter: grayscale(0%);
+}
+
+.linkedin-icon img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    margin-left: 20px;
+}
+
+.linkedin-icon:hover img {
+    filter: grayscale(0%);
+}
+
+.substack-icon img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(90%);
+    transition: filter 0.3s ease;
+    margin-left: 20px;
+}
+
+.substack-icon:hover img {
+    filter: grayscale(0%);
+}
+
+mark.Molecule{
+    background-color: #73E8E0;
+}
+mark.bio{
+    background-color: #D7F9C0;
+}
+mark.txb{
+    background-color: #A3C1E7;
+}
+mark.zuzalu{
+    background-color: #79D29A;
+}
+mark.c1{
+    background-color: #6FD1F1;
+}
+mark.writing{
+    background-color: #dedae9;
+}
+.interests{
+    padding-left: 50%;
+}
+ul li {
+    padding-bottom: 10px; /* Change this value to increase or decrease the gap */
+}
+
+.custom-font-size{
+    font-size: 20px;
+}
+footer {
+    background-color: whitesmoke;
+    color: #212529;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .image-container1 {
+    display: flex;
+    justify-content: flex-start;  /* This will distribute the images evenly within the container */
+    align-items: center;  /* This will vertically center the images */
+    flex-wrap: wrap;  /* This allows the images to wrap to the next line if the container is too small */
+}
+
+.image-container1 img {
+    margin: 10px;  /* This adds a bit of space around each image */
+    width: 150px;  /* This sets the width of the images */
+    height: auto;  /* This maintains the aspect ratio of the images */
+}
+
+  
+  /* css for small sceeens*/
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 10px 2%;
+    }
+
+    .header-text{
+        margin-top: 10%;
+        font-size: 16px;
+        padding-left: 0;
+        width: 100%;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+
+    .image_container{
+        width: 200px;
+        height: 200px;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .social-media{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+}
